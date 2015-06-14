@@ -1,2 +1,2 @@
 # wpf-modern-flat
-A modernflat UI in WPF.
+A modern flat UI in WPF.
