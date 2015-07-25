@@ -1,0 +1,1 @@
+C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlatSampleApp\bin\x64\Debug\WpfModernFlatSampleApp.exe.config

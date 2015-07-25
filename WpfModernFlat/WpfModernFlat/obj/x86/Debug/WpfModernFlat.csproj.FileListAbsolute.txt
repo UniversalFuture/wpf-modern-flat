@@ -1,0 +1,15 @@
+C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\bin\x86\Debug\WpfModernFlat.dll
+C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\bin\x86\Debug\WpfModernFlat.pdb
+C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\obj\x86\Debug\Resources\Colors.baml
+C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\obj\x86\Debug\Resources\Styles1.g.cs
+C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\obj\x86\Debug\WpfModernFlat_MarkupCompile.cache
+C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\obj\x86\Debug\WpfModernFlat_MarkupCompile.lref
+C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\obj\x86\Debug\Global.baml
+C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\obj\x86\Debug\Resources\Styles1.baml
+C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\obj\x86\Debug\WpfModernFlat.g.resources
+C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\obj\x86\Debug\WpfModernFlat.Properties.Resources.resources
+C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\obj\x86\Debug\WpfModernFlat.csproj.GenerateResource.Cache
+C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\obj\x86\Debug\WpfModernFlat.dll
+C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\obj\x86\Debug\WpfModernFlat.pdb
+C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\obj\x86\Debug\WpfModernFlat.csprojResolveAssemblyReference.cache
