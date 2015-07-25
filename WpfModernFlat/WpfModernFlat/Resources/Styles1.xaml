@@ -1,0 +1,149 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WpfModernFlat.Controls"
+                    xmlns:local="clr-namespace:WpfModernFlat.Resources" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:Custom="http://schemas.microsoft.com/expression/2010/drawing"
+                    x:Class="WpfModernFlat.Styles1"
+                    mc:Ignorable="d">
+    <Style x:Key="FlatWindowStyle" TargetType="{x:Type controls:FlatWindow}">
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"/>
+        <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type controls:FlatWindow}">
+                    <ControlTemplate.Resources>
+                        <Storyboard x:Key="OnMouseDown1"/>
+                    </ControlTemplate.Resources>
+                    <Border BorderBrush="{x:Null}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="7">
+                        <Grid>
+                            <Grid x:Name="resizeGrid">
+                                <Rectangle
+            Stroke="{x:Null}"
+            Fill="Transparent"
+            VerticalAlignment="Top"
+            Height="5"
+            x:Name="top"
+            Margin="5,0,5,0" />
+                                <Rectangle
+            Stroke="{x:Null}"
+            Fill="Transparent"
+            x:Name="bottom"
+            Height="5"
+            VerticalAlignment="Bottom"
+            Margin="5,0,5,0" />
+                                <Rectangle
+            Stroke="{x:Null}"
+            Fill="Transparent"
+            HorizontalAlignment="Left"
+            Margin="0,5,0,5"
+            Width="5"
+            x:Name="left"/>
+                                <Rectangle
+            Stroke="{x:Null}"
+            Fill="Transparent"
+            Margin="0,5,0,5"
+            Width="5"
+            HorizontalAlignment="Right"
+            x:Name="right" />
+                                <Rectangle
+            Stroke="{x:Null}"
+            Fill="Transparent"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Bottom"
+            Width="5"
+            Height="5"
+            x:Name="bottomLeft" />
+                                <Rectangle
+            Stroke="{x:Null}"
+            Fill="Transparent"
+            VerticalAlignment="Bottom"
+            Height="5"
+            Width="5"
+            HorizontalAlignment="Right"
+            x:Name="bottomRight" />
+                                <Rectangle
+            Stroke="{x:Null}"
+            Fill="Transparent"
+            HorizontalAlignment="Right"
+            Width="5"
+            Height="5"
+            VerticalAlignment="Top"
+            x:Name="topRight" />
+                                <Rectangle
+            Stroke="{x:Null}"
+            Fill="Transparent"
+            HorizontalAlignment="Left"
+            Width="6"
+            VerticalAlignment="Top"
+            Height="5"
+            x:Name="topLeft" />
+                            </Grid>
+                            <Border x:Name="titleBar" BorderThickness="1" HorizontalAlignment="Stretch" Height="34" VerticalAlignment="Top" Width="Auto" Background="{TemplateBinding WindowTitleBrush}" CornerRadius="7,7,0,0" Padding="5" Margin="0" d:LayoutOverrides="TopMargin, BottomMargin">
+                                <Border.BorderBrush>
+                                    <SolidColorBrush Color="Black" Opacity="0.3"/>
+                                </Border.BorderBrush>
+                                <Grid x:Name="titleBarGrid" VerticalAlignment="Center" Margin="5,0,0,0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.05*" />
+                                        <ColumnDefinition Width="0.75*" />
+                                        <ColumnDefinition Width="0.2*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Rectangle x:Name="moveRectangle" Grid.Column="0" Fill="Transparent" HorizontalAlignment="Stretch" Margin="-10" Stroke="{x:Null}" Width="Auto" Grid.ColumnSpan="3" Panel.ZIndex="1"/>
+                                    <Rectangle Fill="{TemplateBinding WindowTitleForegroundBrush}" HorizontalAlignment="Left" Stroke="{x:Null}" Width="16">
+                                        <Rectangle.OpacityMask>
+                                            <VisualBrush Visual="{Binding IconVisual, RelativeSource={RelativeSource TemplatedParent}}" />
+                                        </Rectangle.OpacityMask>
+                                    </Rectangle>
+                                    <Image x:Name="image" MaxHeight="24" MaxWidth="24" Height="Auto" Source="{TemplateBinding Icon}" Width="Auto"/>
+                                    <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="{TemplateBinding Title}" Foreground="{TemplateBinding WindowTitleForegroundBrush}" Margin="10,0,0,0" Grid.Column="1" FontSize="{TemplateBinding FontSize}" FontFamily="{TemplateBinding FontFamily}" VerticalAlignment="Center"/>
+                                    <StackPanel Width="Auto" Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,5,0" Panel.ZIndex="2">
+                                        <Ellipse x:Name="btnMinimize" Fill="{TemplateBinding MinimizeButtonBrush}" HorizontalAlignment="Left" Width="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource Self}}" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Margin="5,0" Cursor="Hand" ToolTip="Minimize">
+                                            <Ellipse.Stroke>
+                                                <SolidColorBrush Color="Black" Opacity="0.3"/>
+                                            </Ellipse.Stroke>
+                                        </Ellipse>
+                                        <Ellipse x:Name="btnMaximize" HorizontalAlignment="Left" Width="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource Self}}" Margin="5,0" Fill="{TemplateBinding MaximizeButtonBrush}" Cursor="Hand" ToolTip="Maximize">
+                                            <Ellipse.Stroke>
+                                                <SolidColorBrush Color="Black" Opacity="0.3"/>
+                                            </Ellipse.Stroke>
+                                        </Ellipse>
+                                        <Ellipse x:Name="btnClose" HorizontalAlignment="Left" Width="{Binding ActualHeight, Mode=OneWay, RelativeSource={RelativeSource Self}}" Margin="5,0" Fill="{TemplateBinding CloseButtonBrush}" Cursor="Hand" ToolTip="Close">
+                                            <Ellipse.Stroke>
+                                                <SolidColorBrush Color="Black" Opacity="0.3"/>
+                                            </Ellipse.Stroke>
+                                        </Ellipse>
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+                            <Border BorderThickness="0,1,1,1" Height="Auto" VerticalAlignment="Stretch" Width="Auto" Margin="0,32,0,0" CornerRadius="0,0,7,7" Background="{TemplateBinding Background}">
+                                <Border.BorderBrush>
+                                    <SolidColorBrush Color="Black" Opacity="0.3"/>
+                                </Border.BorderBrush>
+                                <ContentPresenter/>
+                            </Border>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="WindowState" Value="Maximized">
+                            <Setter Property="ToolTip" TargetName="btnMaximize" Value="Maximize"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True" SourceName="btnMinimize">
+                            <Setter Property="Fill" TargetName="btnMinimize" Value="{Binding WindowTitleForegroundBrush, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type controls:FlatWindow}}}"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True" SourceName="btnMaximize">
+                            <Setter Property="Fill" TargetName="btnMaximize" Value="{Binding WindowTitleForegroundBrush, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type controls:FlatWindow}}}"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True" SourceName="btnClose">
+                            <Setter Property="Fill" TargetName="btnClose" Value="{Binding WindowTitleForegroundBrush, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type controls:FlatWindow}}}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="AllowsTransparency" Value="True"/>
+        <Setter Property="WindowStyle" Value="None"/>
+        <Setter Property="WindowTitleBrush" Value="{DynamicResource WetAsphalt}"/>
+        <Setter Property="CloseButtonBrush" Value="{DynamicResource Alizarin}"/>
+        <Setter Property="MinimizeButtonBrush" Value="{DynamicResource Sunflower}"/>
+        <Setter Property="MaximizeButtonBrush" Value="{DynamicResource Emerald}"/>
+    </Style>
+</ResourceDictionary>

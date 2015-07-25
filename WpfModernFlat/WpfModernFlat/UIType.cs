@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace WpfModernFlat
 {
     /// <summary>
-    /// The various types of modern flat buttons.
+    /// The various colors a flat UI component can come in.
     /// </summary>
-    public enum ButtonType
+    public enum UIType
     {
         Default,
         Info,
