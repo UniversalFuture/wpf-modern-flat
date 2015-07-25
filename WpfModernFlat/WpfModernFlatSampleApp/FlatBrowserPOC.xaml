@@ -9,7 +9,7 @@
         xmlns:Controls="clr-namespace:WpfModernFlat.Controls;assembly=WpfModernFlat" xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero"
         xmlns:awe1="http://schemas.awesomium.com/winfx" x:Class="WpfModernFlatSampleApp.FlatBrowserPOC"
         mc:Ignorable="d"
-        Title="{Binding Title, ElementName=web}" Height="400" Width="600" Background="White" WindowTitleBrush="{DynamicResource MidnightBlue}" WindowTitleForegroundBrush="{DynamicResource Clouds}" CloseButtonBrush="{DynamicResource Alizarin}" MaximizeButtonBrush="{DynamicResource Emerald}" MinimizeButtonBrush="{DynamicResource Sunflower}">
+        Title="{Binding Title, ElementName=web}" Height="600" Width="800" Background="White" WindowTitleBrush="{DynamicResource MidnightBlue}" WindowTitleForegroundBrush="{DynamicResource Clouds}" CloseButtonBrush="{DynamicResource Alizarin}" MaximizeButtonBrush="{DynamicResource Emerald}" MinimizeButtonBrush="{DynamicResource Sunflower}">
     <Controls:FlatWindow.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
