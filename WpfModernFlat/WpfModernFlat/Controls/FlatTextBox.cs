@@ -41,6 +41,9 @@ namespace WpfModernFlat.Controls
         public static readonly DependencyProperty TypeProperty =
             DependencyProperty.Register("Type", typeof(UIType), typeof(FlatTextBox), new PropertyMetadata(UIType.Default));
 
+        public FlatTextBox()
+        {
 
+        }
     }
 }

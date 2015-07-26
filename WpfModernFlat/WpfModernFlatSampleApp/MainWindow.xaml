@@ -131,6 +131,18 @@
                     <Controls:FlatTextBox x:Name="flatTextBox_Copy2" Margin="225,10,0,0" TextWrapping="Wrap" Text="Warning" VerticalAlignment="Top" FontWeight="Normal" Type="Warning" HorizontalAlignment="Left" Width="101"/>
                     <Controls:FlatTextBox x:Name="flatTextBox_Copy3" HorizontalAlignment="Left" Margin="89.712,42.96,0,0" TextWrapping="Wrap" Text="Primary" VerticalAlignment="Top" FontWeight="Normal" Type="Primary"/>
                     <Controls:FlatTextBox x:Name="flatTextBox_Copy4" HorizontalAlignment="Left" Margin="9.999,42.96,0,0" TextWrapping="Wrap" Text="Success" VerticalAlignment="Top" FontWeight="Normal" Type="Success"/>
+                    <Controls:FlatCheckBox x:Name="flatCheckBox" Content="Default" HorizontalAlignment="Left" Margin="169,43,0,0" VerticalAlignment="Top" IsChecked="True"/>
+                    <Controls:FlatCheckBox x:Name="flatCheckBox_Copy" Content="Info" HorizontalAlignment="Left" Margin="237,43,0,0" VerticalAlignment="Top" IsChecked="True" Type="Info"/>
+                    <Controls:FlatCheckBox x:Name="flatCheckBox_Copy1" Content="Danger" HorizontalAlignment="Left" Margin="288,43,0,0" VerticalAlignment="Top" IsChecked="True" Type="Danger"/>
+                    <Controls:FlatCheckBox x:Name="flatCheckBox_Copy2" Content="Warning" HorizontalAlignment="Left" Margin="357,43,0,0" VerticalAlignment="Top" IsChecked="True" Type="Warning"/>
+                    <Controls:FlatCheckBox x:Name="flatCheckBox_Copy3" Content="Success" HorizontalAlignment="Left" Margin="432,43,0,0" VerticalAlignment="Top" IsChecked="True" Type="Success"/>
+                    <Controls:FlatCheckBox x:Name="flatCheckBox_Copy4" Content="Primary" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top" IsChecked="True" Type="Primary"/>
+                    <Controls:FlatRadioButton x:Name="flatRadioButton" Content="Default" HorizontalAlignment="Left" Margin="80,76,0,0" VerticalAlignment="Top" IsChecked="True"/>
+                    <Controls:FlatRadioButton x:Name="flatRadioButton_Copy" Content="Info" HorizontalAlignment="Left" Margin="148,76,0,0" VerticalAlignment="Top" IsChecked="True" Type="Info"/>
+                    <Controls:FlatRadioButton x:Name="flatRadioButton_Copy1" Content="Danger" HorizontalAlignment="Left" Margin="199,76,0,0" VerticalAlignment="Top" IsChecked="True" Type="Danger"/>
+                    <Controls:FlatRadioButton x:Name="flatRadioButton_Copy2" Content="Warning" HorizontalAlignment="Left" Margin="268,76,0,0" VerticalAlignment="Top" IsChecked="True" Type="Warning"/>
+                    <Controls:FlatRadioButton x:Name="flatRadioButton_Copy3" Content="Success" HorizontalAlignment="Left" Margin="343,76,0,0" VerticalAlignment="Top" IsChecked="True" Type="Success"/>
+                    <Controls:FlatRadioButton x:Name="flatRadioButton_Copy4" Content="Primary" HorizontalAlignment="Left" Margin="414,76,0,0" VerticalAlignment="Top" IsChecked="True" Type="Primary"/>
                 </Grid>
             </Controls:FlatTabItem>
             <Controls:FlatTabItem Header="Other">

@@ -11,7 +11,10 @@ namespace WpfModernFlat.Controls
 {
     public class FlatButton : Button
     {
+        public FlatButton()
+        {
 
+        }
 
         public UIType Type
         {

@@ -9,5 +9,9 @@ namespace WpfModernFlat.Controls
 {
     public class FlatTabControl : TabControl
     {
+        public FlatTabControl()
+        {
+
+        }
     }
 }

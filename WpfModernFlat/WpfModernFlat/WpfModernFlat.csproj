@@ -102,6 +102,8 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Compile Include="Controls\FlatButton.cs" />
+    <Compile Include="Controls\FlatCheckBox.cs" />
+    <Compile Include="Controls\FlatRadioButton.cs" />
     <Compile Include="Controls\FlatTabControl.cs" />
     <Compile Include="Controls\FlatTabItem.cs" />
     <Compile Include="Controls\FlatTextBox.cs" />

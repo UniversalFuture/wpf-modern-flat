@@ -250,4 +250,162 @@
             </MultiTrigger>
         </Style.Triggers>
     </Style>
-    </ResourceDictionary>
+    <Style TargetType="{x:Type Controls:FlatCheckBox}">
+        <Setter Property="Foreground" Value="{DynamicResource Concrete}"/>
+        <Setter Property="Background" Value="{DynamicResource Clouds}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource Concrete}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="FocusVisualStyle">
+            <Setter.Value>
+                <Style>
+                    <Setter Property="Control.Template">
+                        <Setter.Value>
+                            <ControlTemplate>
+                                <Rectangle Margin="1" SnapsToDevicePixels="True" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Controls:FlatCheckBox}">
+                    <BulletDecorator Background="Transparent" SnapsToDevicePixels="True">
+                        <BulletDecorator.Bullet>
+                            <Border Name="Bd" Padding="1" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" Height="15" Width="15" Background="{TemplateBinding Background}" CornerRadius="5">
+                                <Canvas Width="12" Height="12" Clip="F1 M 0,0L 76,0L 76,76L 0,76L 0,0">
+                                    <Path Visibility="Hidden" Name="Check"  Fill="{TemplateBinding Foreground}" Width="12" Height="12" Stretch="Fill" Data="F1 M 23.7501,33.25L 34.8334,44.3333L 52.2499,22.1668L 56.9999,26.9168L 34.8334,53.8333L 19.0001,38L 23.7501,33.25 Z "/>
+                                </Canvas>
+                            </Border>
+                        </BulletDecorator.Bullet>
+                        <Label ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="0" Foreground="{TemplateBinding Foreground}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" FontFamily="{TemplateBinding FontFamily}" FontSize="{TemplateBinding FontSize}" FontWeight="{TemplateBinding FontWeight}" FontStyle="{TemplateBinding FontStyle}"/>
+                    </BulletDecorator>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="HasContent" Value="True">
+                            <Setter Property="FocusVisualStyle">
+                                <Setter.Value>
+                                    <Style>
+                                        <Setter Property="Control.Template">
+                                            <Setter.Value>
+                                                <ControlTemplate>
+                                                    <Rectangle Margin="14,0,0,0" SnapsToDevicePixels="True" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="Padding" Value="4,0,0,0"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="Check" Property="Visibility" Value="Visible" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                        </Trigger>
+                        <Trigger Property="Type" Value="Danger">
+                            <Setter Property="BorderBrush" Value="{DynamicResource Alizarin}"></Setter>
+                            <Setter Property="Foreground" Value="{DynamicResource Alizarin}"></Setter>
+                        </Trigger>
+                        <Trigger Property="Type" Value="Info">
+                            <Setter Property="BorderBrush" Value="{DynamicResource PeterRiver}"></Setter>
+                            <Setter Property="Foreground" Value="{DynamicResource PeterRiver}"></Setter>
+                        </Trigger>
+                        <Trigger Property="Type" Value="Success">
+                            <Setter Property="BorderBrush" Value="{DynamicResource Emerald}"></Setter>
+                            <Setter Property="Foreground" Value="{DynamicResource Emerald}"></Setter>
+                        </Trigger>
+                        <Trigger Property="Type" Value="Warning">
+                            <Setter Property="BorderBrush" Value="{DynamicResource Orange}"></Setter>
+                            <Setter Property="Foreground" Value="{DynamicResource Orange}"></Setter>
+                        </Trigger>
+                        <Trigger Property="Type" Value="Primary">
+                            <Setter Property="BorderBrush" Value="{DynamicResource WetAsphalt}"></Setter>
+                            <Setter Property="Foreground" Value="{DynamicResource WetAsphalt}"></Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style TargetType="{x:Type Controls:FlatRadioButton}">
+        <Setter Property="Foreground" Value="{DynamicResource Concrete}"/>
+        <Setter Property="Background" Value="{DynamicResource Clouds}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource Concrete}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="FocusVisualStyle">
+            <Setter.Value>
+                <Style>
+                    <Setter Property="Control.Template">
+                        <Setter.Value>
+                            <ControlTemplate>
+                                <Rectangle Margin="1" SnapsToDevicePixels="True" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Controls:FlatRadioButton}">
+                    <BulletDecorator Background="Transparent" SnapsToDevicePixels="True">
+                        <BulletDecorator.Bullet>
+                            <Border Name="Bd" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" Height="15" Width="15" Background="{TemplateBinding Background}" CornerRadius="33">
+                                </Border>
+                        </BulletDecorator.Bullet>
+                        <Label ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="0" Foreground="{TemplateBinding Foreground}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" FontFamily="{TemplateBinding FontFamily}" FontSize="{TemplateBinding FontSize}" FontWeight="{TemplateBinding FontWeight}" FontStyle="{TemplateBinding FontStyle}"/>
+                    </BulletDecorator>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="HasContent" Value="True">
+                            <Setter Property="FocusVisualStyle">
+                                <Setter.Value>
+                                    <Style>
+                                        <Setter Property="Control.Template">
+                                            <Setter.Value>
+                                                <ControlTemplate>
+                                                    <Rectangle Margin="14,0,0,0" SnapsToDevicePixels="True" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" StrokeThickness="1" StrokeDashArray="1 2"/>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="Padding" Value="4,0,0,0"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="Bd" Property="Background" Value="{Binding Path=Foreground, RelativeSource={RelativeSource TemplatedParent}}" />
+                            <Setter TargetName="Bd" Property="BorderBrush" Value="{Binding Path=Background, RelativeSource={RelativeSource TemplatedParent}}"></Setter>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                        </Trigger>
+                        <Trigger Property="Type" Value="Danger">
+                            <Setter Property="BorderBrush" Value="{DynamicResource Alizarin}"></Setter>
+                            <Setter Property="Foreground" Value="{DynamicResource Alizarin}"></Setter>
+                        </Trigger>
+                        <Trigger Property="Type" Value="Info">
+                            <Setter Property="BorderBrush" Value="{DynamicResource PeterRiver}"></Setter>
+                            <Setter Property="Foreground" Value="{DynamicResource PeterRiver}"></Setter>
+                        </Trigger>
+                        <Trigger Property="Type" Value="Success">
+                            <Setter Property="BorderBrush" Value="{DynamicResource Emerald}"></Setter>
+                            <Setter Property="Foreground" Value="{DynamicResource Emerald}"></Setter>
+                        </Trigger>
+                        <Trigger Property="Type" Value="Warning">
+                            <Setter Property="BorderBrush" Value="{DynamicResource Orange}"></Setter>
+                            <Setter Property="Foreground" Value="{DynamicResource Orange}"></Setter>
+                        </Trigger>
+                        <Trigger Property="Type" Value="Primary">
+                            <Setter Property="BorderBrush" Value="{DynamicResource WetAsphalt}"></Setter>
+                            <Setter Property="Foreground" Value="{DynamicResource WetAsphalt}"></Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
