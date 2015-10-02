@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>WpfModernFlat</id>
+    <version>1.0</version>
+    <title>WPF Modern Flat UI</title>
+    <authors>Tobe O.</authors>
+    <owners>Universal Future</owners>
+    <licenseUrl>https://github.com/UniversalFuture/wpf-modern-flat/raw/master/LICENSE</licenseUrl>
+    <projectUrl>http://universalfuture.github.io/wpf-modern-flat</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>"A modern flat UI in WPF.</description>
+    <releaseNotes>First release!</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>WPF flat-ui csharp</tags>
+  </metadata>
+</package>

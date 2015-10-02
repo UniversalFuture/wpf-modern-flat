@@ -12,3 +12,4 @@ C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\obj\Relea
 C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\obj\Release\WpfModernFlat.csproj.GenerateResource.Cache
 C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\obj\Release\WpfModernFlat.dll
 C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\obj\Release\WpfModernFlat.pdb
+C:\Users\tobe\Source\Repos\wpf-modern-flat\WpfModernFlat\WpfModernFlat\obj\Release\WpfModernFlat.csprojResolveAssemblyReference.cache

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>WpfModernFlat</id>
+        <version>1.1.1</version>
+        <title>WPF Modern Flat UI</title>
+        <authors>Tobe O.</authors>
+        <owners>Universal Future</owners>
+        <licenseUrl>https://github.com/UniversalFuture/wpf-modern-flat/raw/master/LICENSE</licenseUrl>
+        <projectUrl>http://universalfuture.github.io/wpf-modern-flat</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>"A modern flat UI in WPF.</description>
+        <releaseNotes>Modified package contents to contain the actual DLL!</releaseNotes>
+        <copyright>Copyright 2015</copyright>
+        <tags>WPF flat-ui csharp</tags>
+        <frameworkAssemblies>
+            <frameworkAssembly assemblyName="PresentationCore" targetFramework="" />
+        </frameworkAssemblies>
+    </metadata>
+    <files>
+        <file src="content\Resources\Colors.xaml" target="content\Resources\Colors.xaml" />
+        <file src="content\Resources\Styles1.xaml" target="content\Resources\Styles1.xaml" />
+        <file src="content\Global.xaml" target="content\Global.xaml" />
+        <file src="lib\WpfModernFlat.dll" target="lib\WpfModernFlat.dll" />
+    </files>
+</package>
