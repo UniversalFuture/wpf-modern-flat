@@ -1,5 +1,11 @@
-# wpf-modern-flat v1.1
+# wpf-modern-flat v2.0
 A modern flat UI in WPF.
+
+*Version 2.0 is officially **in development**!*
+*Check out the **master** branch to see the old source.*
+
+#Planned Changes
+See the [roadmap](roadmap.md).
 
 #What is this?
 Basically, it's a WPF theme that lets you create modern-looking programs with no hassle whatsoever. You can't resize the windows right now, but if enough people like it that I can further this project, that will be the first change I implement.
